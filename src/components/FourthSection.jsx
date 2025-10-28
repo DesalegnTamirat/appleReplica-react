@@ -2,20 +2,20 @@ import React from "react";
 
 export default function FourthSection() {
   return (
-    <section class="fourth-heghlight-wrapper">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="left-side-wrapper col-sm-12 col-md-6">
-            <div class="left-side-container">
-              <div class="title-wraper">iPhone 11</div>
-              <div class="description-wraper">
+    <section className="fourth-heghlight-wrapper">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="left-side-wrapper col-sm-12 col-md-6">
+            <div className="left-side-container">
+              <div className="title-wraper">iPhone 11</div>
+              <div className="description-wraper">
                 Just the right amount of everything.
               </div>
-              <div class="price-wrapper">
+              <div className="price-wrapper">
                 From $18.70/mo. or $499 with trade‑in.<sup>1</sup>
               </div>
 
-              <div class="links-wrapper">
+              <div className="links-wrapper">
                 <ul>
                   <li>
                     <a href="">Learn more</a>
@@ -27,13 +27,13 @@ export default function FourthSection() {
               </div>
             </div>
           </div>
-          <div class="right-side-wrapper col-sm-12 col-md-6">
-            <div class="right-side-container">
-              <div class="title-wraper white">
+          <div className="right-side-wrapper col-sm-12 col-md-6">
+            <div className="right-side-container">
+              <div className="title-wraper white">
                 Get the latest CDC response to COVID-19.
               </div>
 
-              <div class="links-wrapper white">
+              <div className="links-wrapper white">
                 <ul>
                   <li>
                     <a href="">Watch the PSA</a>
