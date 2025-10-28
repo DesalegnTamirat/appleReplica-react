@@ -1,3 +1,6 @@
+import appleTvLogo from "../assets/images/icons/apple-tv-logo.png"
+import banker from "../assets/images/home/banker.png";
+import watchLogo from "../assets/images/icons/watch-series5-logo.png";
 
 export default function FifthSection() {
   return (
@@ -8,12 +11,12 @@ export default function FifthSection() {
 					<div className="left-side-container">
 						<div className="top-logo-wrapper">
 							<div className="logo-wrapper">
-								<img src="images/icons/apple-tv-logo.png" />
+								<img src={appleTvLogo} />
 							</div>
 						</div>
 
 						<div className="tvshow-logo-wraper">
-							<img src="images/home/banker.png" />
+							<img src={banker} />
 						</div>
 
 						<div className="watch-more-wrapper">
@@ -25,7 +28,7 @@ export default function FifthSection() {
 					<div className="right-side-container">
 						<div className="top-logo-wrapper">
 							<div className="logo-wrapper">
-								<img src="images/icons/watch-series5-logo.png" />
+								<img src={watchLogo} />
 							</div>
 						</div>
 						<div className="description-wraper">
