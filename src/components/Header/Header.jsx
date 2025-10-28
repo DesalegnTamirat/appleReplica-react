@@ -1,4 +1,6 @@
-
+import logoIcon from "../../assets/images/icons/logo-sm.png";
+import searchIcon from "../../assets/images/icons/search-icon-sm.png";
+import cartIcon from "../../assets/images/icons/cart-sm.png";
 export default function Header() {
   return (
     <div class="nav-wrapper fixed-top">
@@ -7,7 +9,7 @@ export default function Header() {
 			    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target=".navbar-collapse">
 			        ☰
 			    </button>
-			    <a class="navbar-brand mx-auto" href="#"><img src="images/icons/logo-sm.png" /></a>
+			    <a class="navbar-brand mx-auto" href="#"><img src={logoIcon} /></a>
 
 			    <div class="navbar-collapse collapse">
 			        <ul class="navbar-nav nav-justified w-100 nav-fill">
@@ -18,8 +20,8 @@ export default function Header() {
 						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">tv</a></li>
 						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Music</a></li>
 						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Support</a></li>
-						<li class="nav-item" ><a class="nav-link js-scroll-trigger" href="/search/"><img src="images/icons/search-icon-sm.png" /></a></li>
-						<li class="nav-item"><a  class="nav-link js-scroll-trigger" href="/cart/"><img src="images/icons/cart-sm.png" /></a></li>
+						<li class="nav-item" ><a class="nav-link js-scroll-trigger" href="/search/"><img src={searchIcon} /></a></li>
+						<li class="nav-item"><a  class="nav-link js-scroll-trigger" href="/cart/"><img src={cartIcon} /></a></li>
 			        </ul>
 			    </div>
 			</nav>
