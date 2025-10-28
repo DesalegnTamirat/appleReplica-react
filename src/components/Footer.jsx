@@ -1,30 +1,13 @@
 import usa from "../assets/images/icons/16.png";
-import $ from "jquery";
+import accordionHandler from "./Footer/accordionHandler";
 
 export default function Footer() {
   const agreementPdf =
     "https://www.goldmansachs.com/terms-and-conditions/Apple-Card-Customer-Agreement.pdf";
   const installements =
     "https://www.apple.com/legal/sales-support/iphoneinstallments_us/";
-
-  $(function () {
-    function handleAccordion() {
-      if ($(window).width() <= 768) {
-        $(".footer-links-wrapper h3")
-          .off("click")
-          .on("click", function () {
-            const ul = $(this).next("ul");
-            ul.slideToggle();
-            $(this).toggleClass("iconToggleer");
-          });
-      } else {
-        $(".footer-links-wrapper ul").show();
-      }
-    }
-
-    handleAccordion();
-    $(window).on("resize", handleAccordion);
-  });
+    
+  accordionHandler();
 
   return (
     <footer class="footer-wrapper">
