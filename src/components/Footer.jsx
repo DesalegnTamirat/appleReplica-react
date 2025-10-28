@@ -1,9 +1,31 @@
 import usa from "../assets/images/icons/16.png";
+import $ from "jquery";
 
 export default function Footer() {
   const agreementPdf =
     "https://www.goldmansachs.com/terms-and-conditions/Apple-Card-Customer-Agreement.pdf";
-  const installements = "https://www.apple.com/legal/sales-support/iphoneinstallments_us/";
+  const installements =
+    "https://www.apple.com/legal/sales-support/iphoneinstallments_us/";
+
+  $(function () {
+    function handleAccordion() {
+      if ($(window).width() <= 768) {
+        $(".footer-links-wrapper h3")
+          .off("click")
+          .on("click", function () {
+            const ul = $(this).next("ul");
+            ul.slideToggle();
+            $(this).toggleClass("iconToggleer");
+          });
+      } else {
+        $(".footer-links-wrapper ul").show();
+      }
+    }
+
+    handleAccordion();
+    $(window).on("resize", handleAccordion);
+  });
+
   return (
     <footer class="footer-wrapper">
       <div class="container">
@@ -29,11 +51,7 @@ export default function Footer() {
               Customer Agreement
             </a>
             . Additional iPhone Payments terms are{" "}
-            <a href={installements}>
-              {" "}
-              here
-            </a>
-            .
+            <a href={installements}> here</a>.
           </p>
           <p>
             2. Subscription required.
