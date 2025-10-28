@@ -1,6 +1,6 @@
-import logoIcon from "../../assets/images/icons/logo-sm.png";
-import searchIcon from "../../assets/images/icons/search-icon-sm.png";
-import cartIcon from "../../assets/images/icons/cart-sm.png";
+import logoIcon from "../assets/images/icons/logo-sm.png";
+import searchIcon from "../assets/images/icons/search-icon-sm.png";
+import cartIcon from "../assets/images/icons/cart-sm.png";
 export default function Header() {
   return (
     <div class="nav-wrapper fixed-top">
