@@ -1,5 +1,4 @@
 import styles from "./fourthsection.module.css";
-import React from "react";
 
 export default function FourthSection() {
   return (
@@ -37,7 +36,7 @@ export default function FourthSection() {
             <div
               className={`${styles["right-side-container"]} right-side-container`}
             >
-              <div className="title-wraper white">
+              <div className={`${styles["title-wraper"]} ${styles["white"]} title-wraper white`} >
                 Get the latest CDC response to COVID-19.
               </div>
               <div

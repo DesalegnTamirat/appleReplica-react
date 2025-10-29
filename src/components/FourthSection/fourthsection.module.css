@@ -23,6 +23,7 @@
 
 .right-side-container .title-wraper {
     max-width: 380px;
+		margin: 0 auto;
 }
 
 .links-wrapper.white li a {

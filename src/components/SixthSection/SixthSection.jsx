@@ -1,4 +1,4 @@
-import arcade from "../assets/images/icons/arcade.png";
+import arcade from "../../assets/images/icons/arcade.png";
 
 export default function SixthSection() {
   return (
