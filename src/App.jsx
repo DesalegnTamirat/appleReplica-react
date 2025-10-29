@@ -1,12 +1,12 @@
 import Alert from "./components/Alert/Alert";
-import FifthSection from "./components/FifthSection";
-import FirstSection from "./components/FirstSection";
+import FifthSection from "./components/FifthSection/FifthSection";
+import FirstSection from "./components/FirstSection/FirstSection";
 import Footer from "./components/Footer/Footer";
-import FourthSection from "./components/FourthSection";
+import FourthSection from "./components/FourthSection/FourthSection";
 import Header from "./components/Header/Header";
-import SecondSection from "./components/SecondSection";
-import SixthSection from "./components/SixthSection";
-import ThirdSection from "./components/ThirdSection";
+import SecondSection from "./components/SecondSection/SecondSection";
+import SixthSection from "./components/SixthSection/SixthSection";
+import ThirdSection from "./components/ThirdSection/ThirdSection";
 
 export default function App() {
   return (

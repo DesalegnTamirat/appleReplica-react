@@ -1,12 +1,11 @@
+import styles from "./firstsection.module.css";
 
 export default function FirstSection() {
   return (
-    <section className="first-hightlight-wrapper">
+    <section className={styles.firstHighlightWrapper}>
       <div className="container">
         <div className="new-alert">New</div>
-
         <div className="title-wraper bold black">iPad Pro</div>
-
         <div className="links-wrapper">
           <ul>
             <li>
@@ -17,8 +16,7 @@ export default function FirstSection() {
             </li>
           </ul>
         </div>
-
-        <div className="ipod-caption row">
+        <div className={`${styles.ipodCaption} row`}>
           <div className="col-sm-12 col-md-6 text-md-right">
             iPad Pro available starting 3.25
           </div>
