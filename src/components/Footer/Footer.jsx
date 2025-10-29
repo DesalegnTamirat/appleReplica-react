@@ -1,3 +1,4 @@
+import styles from "./footer.module.css";
 import usa from "../../assets/images/icons/16.png";
 import accordionHandler from "./accordionHandler";
 
@@ -6,13 +7,13 @@ export default function Footer() {
     "https://www.goldmansachs.com/terms-and-conditions/Apple-Card-Customer-Agreement.pdf";
   const installements =
     "https://www.apple.com/legal/sales-support/iphoneinstallments_us/";
-    
+
   accordionHandler();
 
   return (
-    <footer class="footer-wrapper">
-      <div class="container">
-        <div class="upper-text-container">
+    <footer className={styles["footer-wrapper"]}>
+      <div className="container">
+        <div className={styles["upper-text-container"]}>
           <p>
             1. Trade In: Trade‑in values vary. iPhone 11 and iPhone 11 Pro
             promotional pricing is after trade‑in of iPhone 8 Plus and iPhone X
@@ -28,12 +29,12 @@ export default function Footer() {
             Citizens One or Apple Card Monthly Installments and iPhone
             activation with AT&T, Sprint, T-Mobile, or Verizon. Taxes and
             shipping not included. Additional Apple Card Monthly Installments
-            terms are in the{" "}
+            terms are in the
             <a href={agreementPdf} target="_blank">
               {" "}
               Customer Agreement
             </a>
-            . Additional iPhone Payments terms are{" "}
+            . Additional iPhone Payments terms are
             <a href={installements}> here</a>.
           </p>
           <p>
@@ -49,8 +50,9 @@ export default function Footer() {
             and other <a href="https://www.apple.com/promo/">terms </a> apply.
           </p>
         </div>
-        <div class="footer-links-wrapper row">
-          <div class="links-wrapper-1 col-sm-12 col-md">
+
+        <div className={`${styles["footer-links-wrapper"]} row`}>
+          <div className={`${styles["links-wrapper-1"]} col-sm-12 col-md`}>
             <h3>Shop and Learn</h3>
             <ul>
               <li>
@@ -88,7 +90,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div class="links-wrapper-2 col-sm-12 col-md">
+          <div className={`${styles["links-wrapper-2"]} col-sm-12 col-md`}>
             <h3>Services</h3>
             <ul>
               <li>
@@ -123,7 +125,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div class="links-wrapper-3 col-sm-12 col-md">
+          <div className={`${styles["links-wrapper-3"]} col-sm-12 col-md`}>
             <h3>Apple Store</h3>
             <ul>
               <li>
@@ -161,7 +163,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div class="links-wrapper-4 col-sm-12 col-md">
+          <div className={`${styles["links-wrapper-4"]} col-sm-12 col-md`}>
             <h3>For Business</h3>
             <ul>
               <li>
@@ -202,7 +204,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div class="links-wrapper-5 col-sm-12 col-md">
+          <div className={`${styles["links-wrapper-5"]} col-sm-12 col-md`}>
             <h3>Apple Values</h3>
             <ul>
               <li>
@@ -247,15 +249,19 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div class="my-apple-wrapper">
+        <div className={styles["my-apple-wrapper"]}>
           More ways to shop: <a href="#">Find an Apple Store</a> or{" "}
           <a href="#">other retailer</a> near you. Or call 1-800-MY-APPLE.
         </div>
-        <div class="copyright-wrapper row">
-          <div class="copyright col-sm-12 order-2 col-md-8 order-md-1 col-lg-4 order-lg-1">
+        <div className="row">
+          <div
+            className={`${styles.copyright} col-sm-12 order-2 col-md-8 order-md-1 col-lg-4 order-lg-1`}
+          >
             Copyright &copy; 2020 Apple Inc. All rights reserved.
           </div>
-          <div class="footer-links-terms  col-sm-12 order-3 col-lg-6 order-lg-2">
+          <div
+            className={`${styles["footer-links-terms"]} col-sm-12 order-3 col-lg-6 order-lg-2`}
+          >
             <ul>
               <li>
                 <a href="#">Privacy Policy</a>
@@ -274,11 +280,13 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div class="footer-country  col-sm-12 order-1 col-md-4 order-md-2 text-md-right col-lg-2 order-lg-3">
-            <div class="flag-wrapper">
-              <img src={usa} />
+          <div
+            className={`${styles["footer-country"]} col-sm-12 order-1 col-md-4 order-md-2 text-md-right col-lg-2 order-lg-3`}
+          >
+            <div className={styles["flag-wrapper"]}>
+              <img src={usa} alt="USA Flag" />
             </div>{" "}
-            <div class="footer-country-name">United States</div>
+            <div className={styles["footer-country-name"]}>United States</div>
           </div>
         </div>
       </div>
