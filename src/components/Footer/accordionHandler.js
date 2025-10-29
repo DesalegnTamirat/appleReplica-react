@@ -9,10 +9,12 @@ export default function accordionHandler() {
           .on("click", function () {
             const ul = $(this).next("ul");
             ul.slideToggle();
-            $(this).toggleClass("iconToggleer");
+            $(this).toggleClass("iconToggler");
           });
       } else {
-        $(".footer-links-wrapper ul").show();
+        $(".footer-links-wrapper h3").off("click");
+        $(".footer-links-wrapper ul").removeAttr("style");
+        $(".footer-links-wrapper h3").removeClass("iconToggler");
       }
     }
 
