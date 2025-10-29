@@ -1,54 +1,54 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,600,600i,700,700i,800,800i,900,900i&display=swap");
 
 /* General Styling */
 body {
-	font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 a {
-	color: #06c; 
-	text-decoration: none; 
+  color: #06c;
+  text-decoration: none;
 }
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .white {
-	color: #fff;
+  color: #fff;
 }
 .black {
-	color: #1d1d1f;
+  color: #1d1d1f;
 }
 .grey {
-	color: #86868b;
+  color: #86868b;
 }
 .top-50 {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 .bold {
-	font-weight: 600;
+  font-weight: 600;
 }
 .new-alert {
-	color: #BF4801;
-	font-size: 14px; 
+  color: #bf4801;
+  font-size: 14px;
 }
 
 /* Common Section Container Styles */
 .left-side-container {
-	min-height: 515px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	text-align: center;	
+  min-height: 515px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 .right-side-container {
-	min-height: 515px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	text-align: center;	
+  min-height: 515px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 
 /* Common Wrapper Styles for Highlight Sections (e.g., .left-side-wrapper) */
@@ -75,28 +75,28 @@ img {
   letter-spacing: -0.04em;
 }
 .description-wrapper {
-	font-size: 26px;
-	padding: 10px 0;
+  font-size: 26px;
+  padding: 10px 0;
 }
 .links-wrapper {
-	padding: 15px 0;
+  padding: 15px 0;
 }
 .links-wrapper ul {
-	list-style: none;
-	padding-inline-start: 0; /* Override default list padding */
+  list-style: none;
+  padding-inline-start: 0; /* Override default list padding */
 }
 .links-wrapper ul li {
-	display: inline-block;
-	padding-right: 20px;
+  display: inline-block;
+  padding-right: 20px;
 }
 .links-wrapper ul li a {
-	/* Override the default global link color for section links */
-	color: #06c; 
-	text-decoration: none;
-	font-size: 21px;
+  /* Override the default global link color for section links */
+  color: #06c;
+  text-decoration: none;
+  font-size: 21px;
 }
 .links-wrapper ul li a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 .links-wrapper ul li a:after {
   font-family: "FontAwesome";
@@ -107,10 +107,15 @@ img {
 
 /* Media Query Adjustments for Common Styles */
 @media (min-width: 768px) {
-	.title-wraper.bold {
-	  font-size: 56px;
-	}
-	.new-alert {
-		font-size: 18px;
-	}
+  .title-wraper.bold {
+    font-size: 56px;
+  }
+  .new-alert {
+    font-size: 18px;
+  }
+}
+
+/* for footer accordion */
+.iconToggler:after {
+  content: "\f068" !important;
 }

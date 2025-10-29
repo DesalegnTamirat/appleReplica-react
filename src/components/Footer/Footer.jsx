@@ -51,7 +51,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className={`${styles["footer-links-wrapper"]} row`}>
+        <div className={`${styles["footer-links-wrapper"]} footer-links-wrapper row`}>
           <div className={`${styles["links-wrapper-1"]} col-sm-12 col-md`}>
             <h3>Shop and Learn</h3>
             <ul>

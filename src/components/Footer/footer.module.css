@@ -87,6 +87,10 @@
 		position: absolute;
 		right: 15px; 
 	}
+	.iconToggler {
+		color: "red";
+		content: "\f068" !important;
+	}
 }
 
 /* --- Media Query: Desktop/Tablet --- */
