@@ -1,5 +1,5 @@
-import usa from "../assets/images/icons/16.png";
-import accordionHandler from "./Footer/accordionHandler";
+import usa from "../../assets/images/icons/16.png";
+import accordionHandler from "./accordionHandler";
 
 export default function Footer() {
   const agreementPdf =
