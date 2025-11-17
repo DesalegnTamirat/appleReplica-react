@@ -6,7 +6,6 @@ import YoutubeVideo from "./YoutubeVideo";
 function YoutubeVideoContainer() {
   const { videos, isLoading, error } = useYoutubeVidoes(8);
 
-  console.log(videos, isLoading, error);
   if (isLoading) return <Spinner />;
   if (error) return <Error message={error} />;
   return (
