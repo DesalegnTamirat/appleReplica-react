@@ -1,7 +1,7 @@
+import useYoutubeVidoes from "../../hooks/useYoutubeVidoes";
 import Error from "../Error";
-import useYoutubeVidoes from "../hooks/useYoutubeVidoes";
 import Spinner from "../Spinner";
-import YouTubeVideo from "./YoutubeVideo";
+import YoutubeVideo from "./YoutubeVideo";
 
 function YoutubeVideoContainer() {
   const { videos, isLoading, error } = useYoutubeVidoes(8);

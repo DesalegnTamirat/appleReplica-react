@@ -1,7 +1,7 @@
 const truncateText = (text, maxLength) =>
   text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
 
-function YouTubeVideo({ video }) {
+function YoutubeVideo({ video }) {
   return (
     <div className="col-md-6">
       <div className="card h-100 shadow-sm">
@@ -27,4 +27,4 @@ function YouTubeVideo({ video }) {
   );
 }
 
-export default YouTubeVideo;
+export default YoutubeVideo;
