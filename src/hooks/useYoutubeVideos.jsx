@@ -28,7 +28,7 @@ const useYoutubeVideos = (maxResults) => {
 
         setVideos(response.data.items);
       } catch (err) {
-        console.error("Error fetching YouTube videos:", err.message);
+        console.log("Error fetching YouTube videos:", err.response.data.error.message);
         setError(
           <>
             <span>Failed to fetch videos.</span>

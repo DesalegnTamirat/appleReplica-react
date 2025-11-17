@@ -98,7 +98,7 @@ img {
 .links-wrapper ul li a:hover {
   text-decoration: underline;
 }
-.links-wrapper ul li a:after {
+.iphone-link:after .links-wrapper ul li a:after {
   font-family: "FontAwesome";
   font-weight: 900;
   content: "\f105";

@@ -3,7 +3,7 @@ function Spinner() {
     <div className="py-5 text-center">
       <div className="spinner-border text-primary" role="status">
       </div>
-      <p>Loading videos...</p>
+      <p>Loading...</p>
     </div>
   );
 }
