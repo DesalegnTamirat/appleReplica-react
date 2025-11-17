@@ -2,10 +2,14 @@
 	text-align: center;
 	padding: 20px;
 }
+.alertContainer {
+	background-color: #ffcc3264;
+	border-radius: 10px;
+}
 .alertTitle {
 	font-weight: 600;
 	color: #1d1d1f;
-	padding: 10px;
+	margin-bottom: 10px;
 }
 .alertText {
 	max-width: 90%;

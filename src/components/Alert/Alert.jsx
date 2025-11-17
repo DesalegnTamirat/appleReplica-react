@@ -2,13 +2,11 @@ import styles from "./alert.module.css";
 
 export default function Alert() {
   return (
-    <section className={`${styles.alertSection} top-50`}>
-      <div className="container">
-        <div className={styles.alertTitle}>We’re open for you.</div>
+    <section className={`${styles.alertSection} top-50 `}>
+      <div className={`container py-4 px-4 ${styles.alertContainer}`}>
+        <h4 className={styles.alertTitle}>We’re open for you.</h4>
         <div className={styles.alertText}>
-          Our retail stores are closed, but you can buy our products here online
-          and get fast, free delivery. If you need help finding the right
-          product or have a question on your order, chat online with a
+          Chat online with a
           Specialist or call 1-800-MY-APPLE.
           <br />
           For service and support, visit{" "}
