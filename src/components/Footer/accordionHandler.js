@@ -1,7 +1,6 @@
 import $ from "jquery";
 
 export default function accordionHandler() {
-  $(function () {
     function handleAccordion() {
       if ($(window).width() <= 768) {
         $(".footer-links-wrapper h3")
@@ -20,5 +19,4 @@ export default function accordionHandler() {
 
     handleAccordion();
     $(window).on("resize", handleAccordion);
-  });
 }

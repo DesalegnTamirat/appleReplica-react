@@ -1,6 +1,7 @@
 import styles from "./footer.module.css";
 import usa from "../../assets/images/icons/16.png";
 import accordionHandler from "./accordionHandler";
+import { useEffect } from "react";
 
 export default function Footer() {
   const agreementPdf =
@@ -8,7 +9,9 @@ export default function Footer() {
   const installements =
     "https://www.apple.com/legal/sales-support/iphoneinstallments_us/";
 
-  accordionHandler();
+  useEffect(() => {
+    return accordionHandler();
+  }, []);
 
   return (
     <footer className={styles["footer-wrapper"]}>
@@ -51,7 +54,9 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className={`${styles["footer-links-wrapper"]} footer-links-wrapper row`}>
+        <div
+          className={`${styles["footer-links-wrapper"]} footer-links-wrapper row`}
+        >
           <div className={`${styles["links-wrapper-1"]} col-sm-12 col-md`}>
             <h3>Shop and Learn</h3>
             <ul>

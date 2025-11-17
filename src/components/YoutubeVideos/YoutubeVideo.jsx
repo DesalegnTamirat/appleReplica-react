@@ -3,7 +3,7 @@ const truncateText = (text, maxLength) =>
 
 function YoutubeVideo({ video }) {
   return (
-    <div className="col-md-6">
+    <div className="mx-auto col-10 col-md-6 mt-3">
       <div className="card h-100 shadow-sm">
         <a
           href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
