@@ -1,4 +1,4 @@
-import useYoutubeVidoes from "../../hooks/useYoutubeVidoes";
+import useYoutubeVidoes from "../../hooks/useYoutubeVideos";
 import Error from "../Error";
 import Spinner from "../Spinner";
 import YoutubeVideo from "./YoutubeVideo";

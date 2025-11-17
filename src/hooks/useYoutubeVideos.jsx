@@ -2,10 +2,10 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
-const CHANNEL_ID = "xUCE_M8A5yxnLfW0KghEeajjw";
+const CHANNEL_ID = "UCE_M8A5yxnLfW0KghEeajjw";
 const YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search";
 
-const useYoutubeVidoes = (maxResults) => {
+const useYoutubeVideos = (maxResults) => {
   const [videos, setVideos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -46,4 +46,4 @@ const useYoutubeVidoes = (maxResults) => {
   return { videos, isLoading, error };
 };
 
-export default useYoutubeVidoes;
+export default useYoutubeVideos;

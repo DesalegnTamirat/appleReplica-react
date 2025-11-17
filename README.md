@@ -1,16 +1,55 @@
-# React + Vite
+# Apple-Inspired Landing Page (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive front-end project built with React, inspired by the design and structure of the Apple homepage. It features modular components, CSS Modules for styling, and dynamic content integration using the YouTube Data API.
 
-Currently, two official plugins are available:
+## ✨ Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modular Component Structure:** Organized into reusable components like `Header`, `Footer`, `Alert`, and several content sections (`FirstSection` through `SixthSection`).
+- **Responsive Design:** Utilizes Bootstrap for grid and utility classes, ensuring a consistent experience across devices.
+- **Dynamic Footer Accordion:** The footer links collapse into an accordion on smaller screens for better mobile navigation.
+- **Latest YouTube Videos:** Integrates with the YouTube Data API to fetch and display the latest videos from a specific channel.
+- **Styling:** Uses a combination of **Bootstrap** and **CSS Modules** for component-specific, scoped styling.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework:** React
+- **Bundler:** Vite (Inferred)
+- **Styling:** CSS Modules, Bootstrap 5
+- **External Libraries:** jQuery (for footer accordion), Axios (for API calls)
 
-## Expanding the ESLint configuration
+## 📦 Installation & Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+You will need a **YouTube Data API v3 Key** to fetch video data.
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/DesalegnTamirat/appleReplica-react.git
+    cd appleReplica-react
+    ```
+
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3.  **Set up Environment Variables:**
+    Create a file named `.env` in the project root directory and add your YouTube API Key.
+
+    ```
+    # .env
+    VITE_YOUTUBE_API_KEY="YOUR_YOUTUBE_API_KEY"
+    ```
+
+4.  **Run the project:**
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
+    The application will typically be available at `http://localhost:5173`.
