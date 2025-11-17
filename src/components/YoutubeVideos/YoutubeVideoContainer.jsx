@@ -12,7 +12,7 @@ function YoutubeVideoContainer() {
     <section className="py-5 px-5">
       <div className="container">
         <h1 className="text-center mb-3">Latest Apple Vidoes</h1>
-        <div className="row g-3">
+        <div className="row">
           {videos.map((video) => (
             <YoutubeVideo key={video.id.videoId} video={video} />
           ))}
