@@ -23,7 +23,7 @@ function IphoneContainer() {
     <div className="container py-5 text-center iphone-product-wrapper">
       <h3 className="mb-5 fw-bold text-primary">Explore iPhone Models</h3>
 
-      {products.map((product, i) => (
+      {products?.map((product, i) => (
         <IphoneDisplayer key={i} i={i} product={product} />
       ))}
     </div>
