@@ -13,7 +13,7 @@ function YoutubeVideoContainer() {
       <div className="container">
         <h1 className="text-center mb-3">Latest Apple Vidoes</h1>
         <div className="row">
-          {videos.map((video) => (
+          {videos?.map((video) => (
             <YoutubeVideo key={video.id.videoId} video={video} />
           ))}
         </div>
