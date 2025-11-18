@@ -6,7 +6,7 @@ import useIphones from "../../hooks/useIphones";
 function IphoneDetails() {
   const { product_id } = useParams();
   const {
-    products: [product],
+    products: product,
     isLoading,
     error,
   } = useIphones(product_id);
